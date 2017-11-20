@@ -10,8 +10,12 @@ import java.util.ArrayList;
 public class Solution {
 	ArrayList<Integer> list=new ArrayList<Integer>();
     public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
+        if(root==null)
+        	return null;
+        TreeNode left=root.left;
+        TreeNode right=root.right;
+        list.add(root.val);
         
-    	
     	
     	return list;
     }
